@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.savegames.salvarjogo.AtualizarPosicaoController">
+   <children>
+      <TextField fx:id="tfPosicao" layoutX="103.0" layoutY="88.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label layoutX="40.0" layoutY="25.0" text="Informe a posicao/pagina atual">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="116.0" layoutY="148.0" mnemonicParsing="false" onAction="#atualizarPosicao" prefHeight="30.0" prefWidth="69.0" text="Salvar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

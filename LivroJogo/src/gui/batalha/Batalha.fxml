@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.batalha.BatalhaController">
+   <children>
+      <TextArea fx:id="taLog" editable="false" layoutX="286.0" layoutY="14.0" prefHeight="340.0" prefWidth="300.0" promptText="Battle Log" scrollTop="500.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="lDetalhes" alignment="TOP_LEFT" layoutX="8.0" layoutY="14.0" prefHeight="200.0" prefWidth="275.0" text="npc n player details">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="cbUsarSorte" disable="true" layoutX="100.0" layoutY="330.0" mnemonicParsing="false" onAction="#mudarUsarSorte" text="Usar sorte" />
+      <Button fx:id="continuar" layoutX="100.0" layoutY="360.0" mnemonicParsing="false" onAction="#threadNotify" text="Continuar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="lSorte" alignment="CENTER" layoutX="8.0" layoutY="211.0" prefHeight="101.0" prefWidth="275.0" text="sorte details">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="start" layoutX="100.0" layoutY="360.0" mnemonicParsing="false" onAction="#batalha" text="Começar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

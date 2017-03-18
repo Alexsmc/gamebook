@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.inicio.InicioController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <Label text="GAMEBOOK ASSISTRY" BorderPane.alignment="TOP_CENTER">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="236.0" layoutY="89.0" mnemonicParsing="false" onAction="#novoJogo" text="Novo Jogo">
+                     <font>
+                        <Font name="Arial" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="181.0" layoutY="157.0" mnemonicParsing="false" onAction="#carregarJogo" text="Carregar Jogo Salvo">
+                     <font>
+                        <Font name="Arial" size="23.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

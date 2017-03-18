@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.savegames.salvarjogo.SalvarJogoController">
+   <children>
+      <TableView fx:id="listaArquivos" layoutX="1.0" layoutY="3.0" onKeyReleased="#checkSelected" onMouseClicked="#checkSelected" prefHeight="350.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="colunaNomeL" prefWidth="273.0" text="Nome Livro" />
+          <TableColumn fx:id="colunaNomeH" prefWidth="247.0" text="Nome Personagem" />
+            <TableColumn fx:id="colunaPos" prefWidth="79.0" text="Posicao" />
+        </columns>
+      </TableView>
+      <Button fx:id="btOvrw" disable="true" layoutX="363.0" layoutY="359.0" mnemonicParsing="false" onAction="#overwrite" prefHeight="37.0" prefWidth="115.0" text="Sobrescrever">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btNewFile" layoutX="104.0" layoutY="359.0" mnemonicParsing="false" onAction="#newFile" prefHeight="37.0" prefWidth="115.0" text="Novo arquivo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

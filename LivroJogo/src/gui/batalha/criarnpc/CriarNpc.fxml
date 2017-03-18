@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.batalha.criarnpc.CriarNpcController">
+   <children>
+      <Label layoutX="86.0" layoutY="19.0" text="Nome">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNome" layoutX="156.0" layoutY="17.0" onKeyReleased="#checkFields" />
+      <Label layoutX="72.0" layoutY="70.0" text="Habilidade">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfHab" layoutX="156.0" layoutY="68.0" onKeyReleased="#checkFields" />
+      <Label layoutX="83.0" layoutY="124.0" text="Energia">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfEnerg" layoutX="156.0" layoutY="122.0" onKeyReleased="#checkFields" />
+      <Button fx:id="bCriar" layoutX="156.0" layoutY="160.0" mnemonicParsing="false" onAction="#criarNpc" prefHeight="29.0" prefWidth="67.0" text="Criar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.telainicial.TelaInicialController">
+   <children>
+      <SplitPane dividerPositions="0.5986622073578596" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="lDetalhes" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="366.0" prefWidth="336.0" text="Detalhes">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutX="51.0" layoutY="30.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="Batalha">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="51.0" layoutY="80.0" mnemonicParsing="false" onAction="#salvarJogo" prefHeight="39.0" prefWidth="135.0" text="Salvar jogo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="51.0" layoutY="136.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="button">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="51.0" layoutY="192.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="button">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="51.0" layoutY="250.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="button">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

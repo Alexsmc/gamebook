@@ -1,0 +1,545 @@
+carregar jogo
+wil1
+Energia: 19/19 Força:8(0)
+
+Goku
+Energia: 20/20 Força: 11
+
+Goku ataca com 21 de força e fere wil1.
+
+2
+wil1 Perde 2 de vida
+
+
+wil1
+Energia: 17/19 Força:8(0)
+
+Goku
+Energia: 20/20 Força: 11
+
+wil1 ataca com 20 de força e fere Goku.
+
+decisao 2Exception in thread "JavaFX Application Thread" 
+Goku Perde 2 de vida
+
+
+wil1
+Energia: 17/19 Força:8(0)
+
+Goku
+Energia: 18/20 Força: 11
+
+wil1 ataca com 13 de força e fere Goku.
+
+java.lang.NullPointerException
+	at com.sun.javafx.text.PrismTextLayout.shape(PrismTextLayout.java:869)
+	at com.sun.javafx.text.PrismTextLayout.layout(PrismTextLayout.java:1064)
+	at com.sun.javafx.text.PrismTextLayout.ensureLayout(PrismTextLayout.java:223)
+	at com.sun.javafx.text.PrismTextLayout.getBounds(PrismTextLayout.java:246)
+	at javafx.scene.text.Text.getLogicalBounds(Text.java:358)
+	at javafx.scene.text.Text.impl_computeGeomBounds(Text.java:1168)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Parent.getChildTransformedBounds(Parent.java:1732)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1524)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Parent.getChildTransformedBounds(Parent.java:1732)
+	at javafx.scene.Parent.updateCachedBounds(Parent.java:1596)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1535)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Parent.getChildTransformedBounds(Parent.java:1732)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1524)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Parent.getChildTransformedBounds(Parent.java:1732)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1524)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.computeLocalBounds(Node.java:3595)
+	at javafx.scene.Node.updateLocalBounds(Node.java:3625)
+	at javafx.scene.Node.getLocalBounds(Node.java:3486)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Parent.getChildTransformedBounds(Parent.java:1732)
+	at javafx.scene.Parent.updateCachedBounds(Parent.java:1596)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1535)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Parent.getChildTransformedBounds(Parent.java:1732)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1524)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Parent.getChildTransformedBounds(Parent.java:1732)
+	at javafx.scene.Parent.updateCachedBounds(Parent.java:1596)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1535)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Parent.getChildTransformedBounds(Parent.java:1732)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1524)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.impl_intersectsBounds(Node.java:5015)
+	at javafx.scene.layout.Region.impl_pickNodeLocal(Region.java:2931)
+	at javafx.scene.Node.impl_pickNode(Node.java:4914)
+	at javafx.scene.Scene$MouseHandler.pickNode(Scene.java:3899)
+	at javafx.scene.Scene$MouseHandler.access$1600(Scene.java:3485)
+	at javafx.scene.Scene.pick(Scene.java:1942)
+	at javafx.scene.Scene.access$6700(Scene.java:159)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3799)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$49(GtkApplication.java:139)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:418)
+	at java.util.ArrayList.get(ArrayList.java:431)
+	at com.sun.javafx.collections.ObservableListWrapper.get(ObservableListWrapper.java:89)
+	at com.sun.javafx.collections.VetoableListDecorator.get(VetoableListDecorator.java:306)
+	at javafx.scene.Parent.updateCachedBounds(Parent.java:1591)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1535)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Node.updateBounds(Node.java:559)
+	at javafx.scene.Parent.updateBounds(Parent.java:1719)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2404)
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$30(Toolkit.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:354)
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:381)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:510)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$49(GtkApplication.java:139)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:418)
+	at java.util.ArrayList.get(ArrayList.java:431)
+	at com.sun.javafx.collections.ObservableListWrapper.get(ObservableListWrapper.java:89)
+	at com.sun.javafx.collections.VetoableListDecorator.get(VetoableListDecorator.java:306)
+	at javafx.scene.Parent.updateCachedBounds(Parent.java:1591)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1535)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Node.updateBounds(Node.java:559)
+	at javafx.scene.Parent.updateBounds(Parent.java:1719)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2404)
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$30(Toolkit.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:354)
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:381)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:510)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$49(GtkApplication.java:139)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:418)
+	at java.util.ArrayList.get(ArrayList.java:431)
+	at com.sun.javafx.collections.ObservableListWrapper.get(ObservableListWrapper.java:89)
+	at com.sun.javafx.collections.VetoableListDecorator.get(VetoableListDecorator.java:306)
+	at javafx.scene.Parent.updateCachedBounds(Parent.java:1591)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1535)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Node.updateBounds(Node.java:559)
+	at javafx.scene.Parent.updateBounds(Parent.java:1719)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2404)
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$30(Toolkit.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:354)
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:381)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:510)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$49(GtkApplication.java:139)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:418)
+	at java.util.ArrayList.get(ArrayList.java:431)
+	at com.sun.javafx.collections.ObservableListWrapper.get(ObservableListWrapper.java:89)
+	at com.sun.javafx.collections.VetoableListDecorator.get(VetoableListDecorator.java:306)
+	at javafx.scene.Parent.updateCachedBounds(Parent.java:1591)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1535)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Node.updateBounds(Node.java:559)
+	at javafx.scene.Parent.updateBounds(Parent.java:1719)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2404)
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$30(Toolkit.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:354)
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:381)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:510)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$49(GtkApplication.java:139)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:418)
+	at java.util.ArrayList.get(ArrayList.java:431)
+	at com.sun.javafx.collections.ObservableListWrapper.get(ObservableListWrapper.java:89)
+	at com.sun.javafx.collections.VetoableListDecorator.get(VetoableListDecorator.java:306)
+	at javafx.scene.Parent.updateCachedBounds(Parent.java:1591)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1535)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Node.updateBounds(Node.java:559)
+	at javafx.scene.Parent.updateBounds(Parent.java:1719)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2404)
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$30(Toolkit.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:354)
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:381)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:510)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$49(GtkApplication.java:139)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:418)
+	at java.util.ArrayList.get(ArrayList.java:431)
+	at com.sun.javafx.collections.ObservableListWrapper.get(ObservableListWrapper.java:89)
+	at com.sun.javafx.collections.VetoableListDecorator.get(VetoableListDecorator.java:306)
+	at javafx.scene.Parent.updateCachedBounds(Parent.java:1591)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1535)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Node.updateBounds(Node.java:559)
+	at javafx.scene.Parent.updateBounds(Parent.java:1719)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2404)
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$30(Toolkit.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:354)
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:381)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:510)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$49(GtkApplication.java:139)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:418)
+	at java.util.ArrayList.get(ArrayList.java:431)
+	at com.sun.javafx.collections.ObservableListWrapper.get(ObservableListWrapper.java:89)
+	at com.sun.javafx.collections.VetoableListDecorator.get(VetoableListDecorator.java:306)
+	at javafx.scene.Parent.updateCachedBounds(Parent.java:1591)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1535)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Node.updateBounds(Node.java:559)
+	at javafx.scene.Parent.updateBounds(Parent.java:1719)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2404)
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$30(Toolkit.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:354)
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:381)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:510)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$49(GtkApplication.java:139)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:418)
+	at java.util.ArrayList.get(ArrayList.java:431)
+	at com.sun.javafx.collections.ObservableListWrapper.get(ObservableListWrapper.java:89)
+	at com.sun.javafx.collections.VetoableListDecorator.get(VetoableListDecorator.java:306)
+	at javafx.scene.Parent.updateCachedBounds(Parent.java:1591)
+	at javafx.scene.Parent.recomputeBounds(Parent.java:1535)
+	at javafx.scene.Parent.impl_computeGeomBounds(Parent.java:1388)
+	at javafx.scene.layout.Region.impl_computeGeomBounds(Region.java:3078)
+	at javafx.scene.Node.updateGeomBounds(Node.java:3579)
+	at javafx.scene.Node.getGeomBounds(Node.java:3532)
+	at javafx.scene.Node.getLocalBounds(Node.java:3480)
+	at javafx.scene.Node.updateTxBounds(Node.java:3643)
+	at javafx.scene.Node.getTransformedBounds(Node.java:3426)
+	at javafx.scene.Node.updateBounds(Node.java:559)
+	at javafx.scene.Parent.updateBounds(Parent.java:1719)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Parent.updateBounds(Parent.java:1717)
+	at javafx.scene.Scene$ScenePulseListener.pulse(Scene.java:2404)
+	at com.sun.javafx.tk.Toolkit.lambda$runPulse$30(Toolkit.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.Toolkit.runPulse(Toolkit.java:354)
+	at com.sun.javafx.tk.Toolkit.firePulse(Toolkit.java:381)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:510)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$49(GtkApplication.java:139)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "JavaFX Application Thread" java.lang.ArrayIndexOutOfBoundsException
