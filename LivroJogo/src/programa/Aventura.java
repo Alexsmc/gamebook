@@ -125,7 +125,7 @@ public class Aventura {
 				break;
 			case 9:
 				try{
-				mundo.equiparItem(h);
+				mundo.equiparItem(h, null);
 				}catch(Exception msg){
 					System.out.println(msg);
 				}

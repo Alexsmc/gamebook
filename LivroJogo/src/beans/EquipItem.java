@@ -9,6 +9,14 @@ public class EquipItem extends Item {
 		super();
 		this.equipado = false;
 	}
+	public EquipItem(Item item, int quantidade) {
+		super(item, quantidade);
+		equipado = false;
+	}
+//	public EquipItem(EquipItem item) {
+//		super(item);
+//		equipado = false;
+//	}
 	
 	public EquipItem(String nome, String descriao, int quantidade, int preco) {
 		super(nome, descriao, quantidade, preco);
@@ -32,11 +40,14 @@ public class EquipItem extends Item {
 		this.setEquipado(false);
 		return equipado;
 	}
-@Override
-	public String toString() {
-
-		return super.getQuantidade() + "x " + super.getNome() + " - C�digo: " + "\n" + "-"
-				+ super.getDescriao() + " custo: " + super.getPreco() + "g\n";
+//	@Override
+//	public String toString() {
+//
+//		return super.getQuantidade() + "x " + super.getNome() + "\n"
+//				+ super.getDescriao() + "\ncusto: " + super.getPreco() + "g\n";
+//	}
+	public boolean equals(EquipItem outro) {
+		return super.equals(outro) && equipado == outro.isEquipado();
 	}
 
 }

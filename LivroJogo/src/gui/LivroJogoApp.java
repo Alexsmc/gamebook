@@ -7,6 +7,7 @@ import beans.Livro;
 import gui.batalha.BatalhaController;
 import gui.batalha.criarnpc.CriarNpcController;
 import gui.inicio.InicioController;
+import gui.itens.ItensController;
 import gui.novojogo.NovoJogoController;
 import gui.savegames.continuarjogo.ContinuarJogoController;
 import gui.savegames.salvarjogo.SalvarJogoController;
@@ -22,7 +23,6 @@ import javafx.stage.Stage;
 public class LivroJogoApp extends Application {
 	private Stage primaryStage;
 	private BorderPane rootScene;
-	
 	@Override
 	public void start (Stage primaryStage) {
 		this.primaryStage = primaryStage;
@@ -166,6 +166,22 @@ public class LivroJogoApp extends Application {
 			controller.setLvapp(this);
 		
 		}catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void carregarTelaItens(Livro livro) {
+		try{
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(LivroJogoApp.class.getResource("itens/Itens.fxml"));
+			AnchorPane itens = (AnchorPane) loader.load();
+			
+			this.rootScene.setCenter(itens);
+			
+			ItensController controller = loader.getController();
+			controller.setLivro(livro);
+			controller.setLivroJogoApp(this);
+		}catch(IOException e) {
 			e.printStackTrace();
 		}
 	}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onKeyReleased="#checkAll" onMouseClicked="#checkAll" prefHeight="210.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ouro.FluxoOuroController">
+   <children>
+      <Label layoutX="45.0" layoutY="70.0" text="Valor">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfValor" layoutX="108.0" layoutY="68.0" prefHeight="25.0" prefWidth="144.0" />
+      <Button fx:id="button" disable="true" layoutX="128.0" layoutY="152.0" mnemonicParsing="false" onAction="#confirmar" text="Ok">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <RadioButton layoutX="45.0" layoutY="110.0" mnemonicParsing="false" onAction="#acresc" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Acrescimo">
+         <toggleGroup>
+            <ToggleGroup fx:id="escolha" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="165.0" layoutY="110.0" mnemonicParsing="false" onAction="#decresc" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Descrescimo" toggleGroup="$escolha" />
+   </children>
+</AnchorPane>

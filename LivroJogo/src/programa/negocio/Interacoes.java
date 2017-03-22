@@ -2,6 +2,7 @@ package programa.negocio;
 
 import java.util.*;
 
+import beans.ConsumivelItem;
 import beans.EquipItem;
 import beans.Heroi;
 import beans.Item;
@@ -55,6 +56,22 @@ public class Interacoes {
 				+ " Forca: " + npc.getAtaqueAtual() + "\n"
 				//);
 				;
+	}
+
+	private void consumirItens(Heroi jogador) {
+		for (int c = 0; c < jogador.getBolsa().listarTodos().size(); c++) {
+			Item item;
+			item = jogador.getBolsa().buscarItem(c);
+			if (item instanceof ConsumivelItem) {
+				ConsumivelItem i = (ConsumivelItem) item;
+				if (i.isEquipado()) {
+					i.usar();
+					if(i.getUsosRestantes() == 0) {
+						jogador.getBolsa().removeItem(c);
+					}
+				}
+			}
+		}
 	}
 
 	public void batalha(Heroi jogador, Npc npc, BatalhaController controller) {
@@ -166,9 +183,9 @@ public class Interacoes {
 			}
 			
 			System.out.println(log+"\n");
-			if (validController) {
-				controller.addTextLog(log);
-			}
+//			if (validController) {
+	//			controller.addTextLog(log);
+		//	}
 			log = log + "\n";
 
 		} while (true);
@@ -190,7 +207,8 @@ public class Interacoes {
 		if (validController) {
 			controller.addTextLog(log);
 		}
-
+		Platform.runLater(r);
+		consumirItens(jogador);
 	}
 	
 	public Livro novoJogo(String nomeLivro, String nomeHeroi, int opcao) {
@@ -213,7 +231,7 @@ public class Interacoes {
 		b.addItem(i);
 		i = new EquipItem("Escudo", "Escudo simples sem nada demais", 1, 0);
 		b.addItem(i);
-		i = new Item("Provisões", "Cura +4 de Energia", 10, 0);
+		i = new Item("Provisoes", "Cura +4 de Energia", 10, 0);
 		i.setMobEne(4);
 		b.addItem(i);
 		i = new Item("Lampiao", "Para iluminar os caminhos escuros", 1, 0);
@@ -280,7 +298,7 @@ public class Interacoes {
 		 * i.setQuantidade(s.nextInt()); System.out.println("Quanto custou?");
 		 * i.setPreco(s.nextInt());
 		 */
-		System.out.println("Qual o tipo do item? \n1- Consumivel\n2- Equipamento\n3- Item chave");
+		System.out.println("Qual o tipo do item? \n1- Consumivel\n2- Equipamento\n3- Item chave\n");
 		mod = s.nextInt();
 		s.nextLine();
 		if (mod == 1) {
@@ -347,26 +365,20 @@ public class Interacoes {
 		System.out.println("Digite o codigo da pocao");
 		int cod = s.nextInt();
 		Item i = jogador.getBolsa().buscarItem(cod);
-		jogador.modificador(i);
-		jogador.getBolsa().removeItem(i);
+		usarItem(jogador, i);
+	}
+	
+	public void usarItem(Heroi jogador, Item item) {
+		jogador.modificador(item);
+		jogador.getBolsa().removeItem(item);
 		System.out.println(jogador);
-		return;
 	}
 
-	public void equiparItem(Heroi heroi)  throws Exception{
-		for (Item i : heroi.getBolsa().listarEquipItens()) {
-			System.out.println(i.toString( heroi.getBolsa().indexOf(i) ));
-		}
-		System.out.println("Digite o codigo do equipamento!");
-		int cod = s.nextInt();
-		try {
-			heroi.equiparItem( (EquipItem) heroi.getBolsa().buscarItem(cod));
-		}catch (ClassCastException | IndexOutOfBoundsException e) {
-			System.out.println(e);
-			System.out.println("Codigo informado nao e valido");
-		}catch (Exception e) {
-			e.printStackTrace();
-		}
+	public String equiparItem(Heroi heroi, EquipItem item)  throws Exception{
+			return heroi.getBolsa().equiparItem(heroi, item);
+	}
+	public String desequiparItem (Heroi heroi, Item item) throws Exception {
+		return heroi.getBolsa().desequiparItem(heroi, item);
 	}
 
 	public Loja lojaYaztromo() {

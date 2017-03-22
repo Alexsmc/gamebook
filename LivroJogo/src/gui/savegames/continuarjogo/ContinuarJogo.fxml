@@ -15,9 +15,15 @@
             <TableColumn fx:id="colunaPos" prefWidth="79.0" text="Posicao" />
         </columns>
       </TableView>
-      <Button fx:id="bt1" layoutX="248.0" layoutY="360.0" mnemonicParsing="false" onAction="#carregarArquivo" prefHeight="29.0" prefWidth="115.0" text="Carregar">
+      <Button fx:id="buttonContinuar" layoutX="248.0" layoutY="360.0" mnemonicParsing="false" onAction="#carregarArquivo" prefHeight="29.0" prefWidth="115.0" text="Carregar">
          <font>
             <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#voltar" text="&lt;&lt;" />
+      <Button fx:id="buttonRemover" layoutX="472.0" layoutY="362.0" mnemonicParsing="false" onAction="#remover" prefHeight="29.0" prefWidth="115.0" text="Remover">
+         <font>
+            <Font size="14.0" />
          </font>
       </Button>
    </children>

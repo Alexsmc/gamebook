@@ -10,13 +10,15 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Alert.AlertType;
 
 public class ContinuarJogoController extends SaveGames {
-	@FXML private Button bt1;
+	@FXML private Button buttonContinuar;
+	@FXML private Button buttonRemover;
 	
 	@FXML protected void initialize () {
 		super.initialize();
-		bt1.setDisable(true);
+		buttonContinuar.setDisable(true);
+		buttonRemover.setDisable(true);
 	}
-
+	
 	
 	public void setFiles(ObservableList<String[]> saves) {
 		super.getListaArquivos().setItems(saves);
@@ -24,8 +26,11 @@ public class ContinuarJogoController extends SaveGames {
 	
 	
 	@FXML private void checkSelected() {
-		if ( super.getListaArquivos().getSelectionModel().getSelectedItem() != null ) {
-			bt1.setDisable(false);
+		String s[] = super.getListaArquivos().getSelectionModel().getSelectedItem();
+		if ( s != null ) {
+			buttonRemover.setDisable(false);
+			if (s[3] != null)
+					buttonContinuar.setDisable(false);
 		}
 	}
 	
@@ -41,6 +46,14 @@ public class ContinuarJogoController extends SaveGames {
 			alert.showAndWait();
 			super.getLvapp().carregarInicio();
 		}
+	}
+	
+	@FXML private void remover() {
+		super.excluirArquivo();
+	}
+	
+	@FXML private void voltar() {
+		super.getLvapp().carregarInicio();
 	}
 	
 }

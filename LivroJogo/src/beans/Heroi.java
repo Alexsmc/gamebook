@@ -154,6 +154,7 @@ public class Heroi extends Personagem implements Serializable {
 	}
 	
 	public void equiparItem(EquipItem equip){
+		System.out.println("Equipar Item");
 		if(!equip.isEquipado()){
 			equip.equipar();
 			this.modificador(equip);

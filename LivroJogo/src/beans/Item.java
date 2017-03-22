@@ -16,6 +16,16 @@ public class Item implements Serializable, Comparable<Item> {
 	public Item() {
 
 	}
+	public Item (Item i, int quantidade) {
+		nome = i.getNome();
+		descriao = i.getDescriao();
+		this.quantidade = quantidade;
+		preco = i.getPreco();
+		modHab = i.getModHab();
+		mobEne = i.getMobEne();
+		mobSor = i.getMobSor();
+		mobSorMax = i.getMobSorMax();
+	}
 
 	public Item(String nome, String descriao, int quantidade, int preco) {
 		this.nome = nome;
@@ -96,10 +106,27 @@ public class Item implements Serializable, Comparable<Item> {
 	public boolean equals(Item item) {
 		return this.nome.equals(item.getNome());
 	}
+	
+	private String modificador() {
+		String s = "Modificador: ";
+		if(modHab > 0)
+			s = s+ modHab+ " (Habilidade)";
+		else if(mobEne > 0)
+			s =  s+ mobEne+" (Energia)";
+		else if(mobSor > 0)
+			s = s+ mobSor+" (Sorte)";
+		else if (mobSorMax > 0)
+			s = s+ mobSorMax+ "(Sorte Max)";
+		else
+			return "";
+		return s;
+	}
 
 	@Override
 	public String toString() {
-		return quantidade + "x " + nome+ "\n-"+ descriao + " custo: " + preco + "g\n";
+		
+		return quantidade + "x " + nome+ "\n-"+ descriao + "\ncusto: " + preco + "g\n"
+				+ modificador();
 	}
 	
 	public String toString (int index) {

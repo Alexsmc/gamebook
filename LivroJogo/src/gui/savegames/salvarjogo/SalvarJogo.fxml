@@ -15,12 +15,17 @@
             <TableColumn fx:id="colunaPos" prefWidth="79.0" text="Posicao" />
         </columns>
       </TableView>
-      <Button fx:id="btOvrw" disable="true" layoutX="363.0" layoutY="359.0" mnemonicParsing="false" onAction="#overwrite" prefHeight="37.0" prefWidth="115.0" text="Sobrescrever">
+      <Button fx:id="btOvrw" disable="true" layoutX="251.0" layoutY="359.0" mnemonicParsing="false" onAction="#overwrite" prefHeight="37.0" prefWidth="125.0" text="Sobrescrever">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Button fx:id="btNewFile" layoutX="104.0" layoutY="359.0" mnemonicParsing="false" onAction="#newFile" prefHeight="37.0" prefWidth="115.0" text="Novo arquivo">
+      <Button fx:id="btNewFile" layoutX="104.0" layoutY="359.0" mnemonicParsing="false" onAction="#newFile" prefHeight="37.0" prefWidth="125.0" text="Novo arquivo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonRemover" layoutX="399.0" layoutY="363.0" mnemonicParsing="false" onAction="#remover" prefHeight="29.0" prefWidth="105.0" text="Remover">
          <font>
             <Font size="15.0" />
          </font>

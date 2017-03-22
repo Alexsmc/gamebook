@@ -1,5 +1,6 @@
 package programa;
 
+import beans.EquipItem;
 import beans.Heroi;
 import beans.Item;
 import beans.Livro;
@@ -53,8 +54,14 @@ public class FachadaLivroJogo implements Runnable {
 			e.printStackTrace();
 		}
 	}
-	public void equiparItem(Heroi jogador) throws Exception {
-		interacoes.equiparItem(jogador);
+	public void usarItem(Heroi jogador, Item item) {
+		interacoes.usarItem(jogador, item);
+	}
+	public void equiparItem(Heroi jogador, EquipItem item) throws Exception {
+		interacoes.equiparItem(jogador, item);
+	}
+	public String desequiparItem(Heroi jogador, EquipItem item) throws Exception {
+		return interacoes.desequiparItem(jogador, item);
 	}
 	public Loja lojaYaztromo() {
 		return interacoes.lojaYaztromo();

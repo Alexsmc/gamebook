@@ -4,9 +4,8 @@ import java.io.IOException;
 
 import arquivo.Arquivo;
 import beans.Livro;
-import gui.LivroJogoApp;
-import gui.batalha.criarnpc.CriarNpcController;
 import gui.savegames.SaveGames;
+import gui.telainicial.TelaInicialController;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -24,8 +23,10 @@ import javafx.scene.layout.BorderPane;
 public class SalvarJogoController extends SaveGames {
 	@FXML private Button btOvrw;
 	@FXML private Button btNewFile;
+	@FXML private Button buttonRemover;
 	private Livro livro;
 	private Stage stage;
+	private boolean continuar = true;
 	
 	@FXML protected void initialize () {
 		super.initialize();
@@ -47,7 +48,10 @@ public class SalvarJogoController extends SaveGames {
 	@FXML private void checkSelected() {
 		if ( super.getListaArquivos().getSelectionModel().getSelectedItem() != null ) {
 			btOvrw.setDisable(false);
-			
+			buttonRemover.setDisable(false);
+		}else {
+			btOvrw.setDisable(true);
+			buttonRemover.setDisable(true);
 		}
 	}
 	
@@ -71,7 +75,7 @@ public class SalvarJogoController extends SaveGames {
 			EventHandler<WindowEvent> e = new EventHandler<WindowEvent>() {
 			    @Override
 			    public void handle(WindowEvent event) {
-			    	stage.close();
+			    	continuar = false;
 			    }
 			};
 			stageAP.setOnCloseRequest(e);
@@ -85,6 +89,7 @@ public class SalvarJogoController extends SaveGames {
 	
 	private void salvarArquivo(String fileName) {
 		carregarAtualizarPosicao();
+		if (!continuar) return;
 		boolean salvo = Arquivo.salvaArquivo(livro, fileName);
 		Alert alert = new Alert(AlertType.INFORMATION);
 		if (salvo) {
@@ -93,6 +98,7 @@ public class SalvarJogoController extends SaveGames {
 			alert.setContentText("Falha ao salvar arquivo!");
 		}
 		alert.showAndWait();
+		TelaInicialController.getController().refresh();
 		stage.close();
 	}
 	
@@ -101,5 +107,8 @@ public class SalvarJogoController extends SaveGames {
 	}
 	public void setStage(Stage stage) {
 		this.stage = stage;
+	}
+	@FXML private void remover() {
+		super.excluirArquivo();
 	}
 }

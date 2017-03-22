@@ -28,6 +28,11 @@ public class SaveGames {
 		colunaNomeH.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue()[1]));
 		colunaPos.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue()[2]));
 	}
+	@FXML protected void excluirArquivo() {
+		String fileName = listaArquivos.getSelectionModel().getSelectedItem()[0];
+		Arquivo.excluir(fileName);
+		initialize();
+	}
 	
 	
 	

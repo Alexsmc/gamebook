@@ -10,10 +10,11 @@ public interface IRepositorioItens {
 	public void setItens(List<Item> itens);
 	public void addItem(Item item);
 	public void removeItem(Item item);
+	public void removeItem(int index);
 	public List<Item> listarItens();
 	public List<Item> listarEquipItens();
 	public List<Item> listarConsumivelItens ();
 	public List<Item> listarKeyItens();
 	public int indexOf (Item i);
-	public Item buscarItem(int cod) throws Exception;
+	public Item buscarItem(int cod);
 }

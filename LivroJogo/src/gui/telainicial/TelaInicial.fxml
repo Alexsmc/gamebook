@@ -8,45 +8,41 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.telainicial.TelaInicialController">
    <children>
-      <SplitPane dividerPositions="0.5986622073578596" prefHeight="400.0" prefWidth="600.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <Label fx:id="lDetalhes" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="366.0" prefWidth="336.0" text="Detalhes">
-                     <font>
-                        <Font size="19.0" />
-                     </font></Label>
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <Button layoutX="51.0" layoutY="30.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="Batalha">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="51.0" layoutY="80.0" mnemonicParsing="false" onAction="#salvarJogo" prefHeight="39.0" prefWidth="135.0" text="Salvar jogo">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="51.0" layoutY="136.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="button">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="51.0" layoutY="192.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="button">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="51.0" layoutY="250.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="button">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-               </children></AnchorPane>
-        </items>
-      </SplitPane>
+      <Separator layoutX="396.0" orientation="VERTICAL" prefHeight="400.0" />
+      <Label fx:id="lDetalhes" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="366.0" prefWidth="336.0" text="Detalhes">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="430.0" layoutY="55.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="Batalha">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="430.0" layoutY="105.0" mnemonicParsing="false" onAction="#salvarJogo" prefHeight="39.0" prefWidth="135.0" text="Salvar jogo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="430.0" layoutY="155.0" mnemonicParsing="false" onAction="#itens" prefHeight="39.0" prefWidth="135.0" text="Itens">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="430.0" layoutY="205.0" mnemonicParsing="false" onAction="#usarSorte" prefHeight="39.0" prefWidth="135.0" text="Usar sorte">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="430.0" layoutY="255.0" mnemonicParsing="false" onAction="#fluxoOuro" prefHeight="39.0" prefWidth="135.0" text="Ouro">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="430.0" layoutY="305.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="Loja">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

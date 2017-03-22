@@ -50,4 +50,8 @@ public class NovoJogoController {
 		this.lvapp = lvapp;
 	}
 	
+	@FXML private void voltar() {
+		lvapp.carregarInicio();
+	}
+	
 }

@@ -93,13 +93,18 @@ public class Arquivo {
 				s[i][1] = new String(l.getJogador().getNome());
 				s[i][2] = new String(""+l.getPosicao());
 				s[i][3] = new String(fileName);
-				i++;
 			}catch(NullPointerException e) {
-				e.printStackTrace();
-				System.out.println("Há um arquivo com erro");
+				System.out.println("Ha um arquivo com erro");
+				s[i][0] = fileName;
+				s[i][1] = "Arquivo com erro";
 			}
+			i++;
 		}
 		return s;
+	}
+	public static void excluir(String fileName) {
+		File f = new File(caminho+fileName);
+		f.delete();
 	}
 	
 	
