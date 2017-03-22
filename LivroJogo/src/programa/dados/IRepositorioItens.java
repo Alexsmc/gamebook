@@ -9,7 +9,7 @@ public interface IRepositorioItens {
 	public List<Item> getItens();
 	public void setItens(List<Item> itens);
 	public void addItem(Item item);
-	public void removeItem(Item item);
+	public void removeItem(Item item, int v);
 	public void removeItem(int index);
 	public List<Item> listarItens();
 	public List<Item> listarEquipItens();

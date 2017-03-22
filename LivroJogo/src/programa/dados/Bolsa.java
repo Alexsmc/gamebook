@@ -47,10 +47,10 @@ public class Bolsa implements IRepositorioItens, Serializable {
 		//System.out.println("Item guardado!!");
 	}
 
-	public void removeItem(Item item) {
+	public void removeItem(Item item, int v) {
 		System.out.println("removeItem");
-		if (item.getQuantidade() > 1) {
-			incdecreaseQuantidade(item, -1);
+		if (item.getQuantidade() > v) {
+			incdecreaseQuantidade(item, -v);
 			//System.out.println("Item guardado!!");
 			return;
 		}
@@ -61,14 +61,14 @@ public class Bolsa implements IRepositorioItens, Serializable {
 	
 	public String equiparItem(Heroi heroi, EquipItem item)  throws Exception{
 //		System.out.println("euiparItem");
-//		for (int c = 0; c < itens.size(); c++) {
-//			Item i = itens.get(c);
-//			if (i.equals(item)) {
-//				if (i instanceof EquipItem && ((EquipItem)i).isEquipado()) {
-//					return "Item ja equipado!";
-//				}
-//			}
-//		}
+		for (int c = 0; c < itens.size(); c++) {
+			Item i = itens.get(c);
+			if (i.equals(item)) {
+				if (i instanceof EquipItem && ((EquipItem)i).isEquipado()) {
+					return "Item ja equipado!";
+				}
+			}
+		}
 		Item itemEquipado = null;
 		if (item instanceof ConsumivelItem) {
 			ConsumivelItem i = (ConsumivelItem) item;
@@ -79,7 +79,7 @@ public class Bolsa implements IRepositorioItens, Serializable {
 		}
 		itens.add(itemEquipado);
 		try {
-			removeItem(item);
+			removeItem(item, 1);
 			heroi.equiparItem( (EquipItem) itemEquipado);
 			return "Item Equipado";
 		}catch (ClassCastException | IndexOutOfBoundsException e) {
@@ -109,7 +109,6 @@ public class Bolsa implements IRepositorioItens, Serializable {
 							itens.get(index).setQuantidade(1);
 							break;
 						}else if (index == itens.size()-1) {
-							System.out.println("cria novo");
 							itens.add(i);
 							break;
 						}
@@ -130,14 +129,12 @@ public class Bolsa implements IRepositorioItens, Serializable {
 		List<Item> itens = new ArrayList<Item>();
 		for (Item i : this.itens) {
 			if ( ! (i instanceof ConsumivelItem || i instanceof EquipItem || i instanceof KeyItem) ) {
-				System.out.println(i.getNome()+" "+(i instanceof ConsumivelItem));
 				itens.add(i);
 			}
 		}
 		return itens;
 	}
 	public List<Item> listarEquipItens() {
-		System.out.println("chamada");
 		List<Item> itens = new ArrayList<Item>();
 		for (Item i : this.itens) {
 			if (!(i instanceof ConsumivelItem) && i instanceof EquipItem) {

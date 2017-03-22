@@ -15,6 +15,7 @@
       </RadioButton>
       <RadioButton fx:id="rbEquip" layoutX="119.0" layoutY="23.0" mnemonicParsing="false" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Equipavel" toggleGroup="$tgTipoItem" />
       <RadioButton fx:id="rbCons" layoutX="215.0" layoutY="23.0" mnemonicParsing="false" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Consumivel" toggleGroup="$tgTipoItem" />
+      <RadioButton fx:id="rbKey" layoutX="316.0" layoutY="23.0" mnemonicParsing="false" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Key Item" toggleGroup="$tgTipoItem" />
       <Label layoutX="46.0" layoutY="71.0" text="Nome">
          <font>
             <Font size="13.0" />
@@ -26,43 +27,42 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="tfQuantidade" layoutX="130.0" layoutY="175.0" prefHeight="25.0" prefWidth="73.0" />
+      <TextArea fx:id="taDescricao" layoutX="130.0" layoutY="104.0" prefHeight="58.0" prefWidth="179.0" />
       <Label layoutX="46.0" layoutY="178.0" text="Quantidade">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
+      <TextField fx:id="tfQuantidade" layoutX="130.0" layoutY="175.0" prefHeight="25.0" prefWidth="73.0" />
       <Label layoutX="46.0" layoutY="215.0" text="Custo">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <TextField fx:id="tfCusto" layoutX="130.0" layoutY="213.0" prefHeight="25.0" prefWidth="73.0" />
-      <RadioButton fx:id="rbHab" layoutX="43.0" layoutY="315.0" mnemonicParsing="false" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Habilidade">
-         <toggleGroup>
-            <ToggleGroup fx:id="tgModificador" />
-         </toggleGroup>
-      </RadioButton>
       <Label layoutX="46.0" layoutY="248.0" text="Duracao">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <TextField fx:id="tfDuracao" disable="true" layoutX="130.0" layoutY="246.0" prefHeight="25.0" prefWidth="73.0" />
-      <RadioButton fx:id="rbEnergia" layoutX="140.0" layoutY="315.0" mnemonicParsing="false" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Energia" toggleGroup="$tgModificador" />
-      <RadioButton fx:id="rbSorte" layoutX="220.0" layoutY="315.0" mnemonicParsing="false" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Sorte" toggleGroup="$tgModificador" />
       <Label layoutX="44.0" layoutY="283.0" text="Modificador">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <TextField fx:id="tfModificador" layoutX="130.0" layoutY="281.0" prefHeight="25.0" prefWidth="73.0" />
+      <RadioButton fx:id="rbHab" layoutX="43.0" layoutY="315.0" mnemonicParsing="false" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Habilidade">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgModificador" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbEnergia" layoutX="140.0" layoutY="315.0" mnemonicParsing="false" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Energia" toggleGroup="$tgModificador" />
+      <RadioButton fx:id="rbSorte" layoutX="220.0" layoutY="315.0" mnemonicParsing="false" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Sorte" toggleGroup="$tgModificador" />
       <Button fx:id="buttonCriar" disable="true" layoutX="233.0" layoutY="355.0" mnemonicParsing="false" onAction="#criarItem" prefHeight="31.0" prefWidth="83.0" text="Criar">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <RadioButton fx:id="rbKey" layoutX="316.0" layoutY="23.0" mnemonicParsing="false" onKeyReleased="#checkAll" onMouseClicked="#checkAll" text="Key Item" toggleGroup="$tgTipoItem" />
-      <TextArea fx:id="taDescricao" layoutX="130.0" layoutY="104.0" prefHeight="58.0" prefWidth="179.0" />
    </children>
 </AnchorPane>

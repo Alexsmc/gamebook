@@ -370,7 +370,7 @@ public class Interacoes {
 	
 	public void usarItem(Heroi jogador, Item item) {
 		jogador.modificador(item);
-		jogador.getBolsa().removeItem(item);
+		jogador.getBolsa().removeItem(item, 1);
 		System.out.println(jogador);
 	}
 
@@ -465,7 +465,7 @@ public class Interacoes {
 				if (condicaoDeCompra((i.getPreco() * i.getQuantidade()), jogador)) {
 					jogador.getBolsa().addItem(i);
 					jogador.setOuro(-(i.getPreco() * i.getQuantidade()));
-					loja.getArtigos().removeItem(i);
+					loja.getArtigos().removeItem(i, 1);
 				} else {
 					System.out.println("Saldo insuficiente");
 				}

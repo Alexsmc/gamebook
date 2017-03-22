@@ -2,6 +2,7 @@ package gui.itens;
 
 import beans.ConsumivelItem;
 import beans.EquipItem;
+import beans.Heroi;
 import beans.Item;
 import beans.KeyItem;
 import javafx.fxml.FXML;
@@ -34,7 +35,7 @@ public class NovoItemController {
 	@FXML ToggleGroup tgModificador;
 	private Stage stage;
 	private Bolsa bolsa;
-	private int ouro;
+	private Heroi jogador;
 	
 	private void initialize() {
 		
@@ -54,10 +55,12 @@ public class NovoItemController {
 			tfDuracao.setDisable(true);
 		
 		if (value) {
-			
 			buttonCriar.setDisable(false);
-		}else
+		}else {
 			buttonCriar.setDisable(true);
+			return;
+		}
+		
 			
 		
 	}
@@ -88,12 +91,19 @@ public class NovoItemController {
 			tfQuantidade.setPromptText("Valor invalido");
 			continuar = false;
 		}
-		if (tgModificador.getSelectedToggle() != null && modificador == null) {
+		if (modificador == null || Integer.parseInt(modificador) < 0) {
 			tfModificador.setText("");
 			tfModificador.setPromptText("Valor invalido");
 			continuar = false;
 		}
-		if (tgTipoItem.getSelectedToggle().equals(rbCons) && duracao == null) {
+		try {
+			if (!tfDuracao.isDisable() && (duracao == null || duracao.equals("") || 
+					Integer.parseInt(duracao) < 0)) {
+				tfDuracao.setText("parseint"+ Integer.parseInt(duracao));
+				tfDuracao.setPromptText("Valor invalido");
+				continuar = false;
+			}
+		}catch(NumberFormatException e) {
 			tfDuracao.setText("");
 			tfDuracao.setPromptText("Valor invalido");
 			continuar = false;
@@ -105,7 +115,7 @@ public class NovoItemController {
 		
 		int iQuantidade = Integer.parseInt(quantidade);
 		int iCusto = Integer.parseInt(custo);
-		if (ouro < iQuantidade*iCusto) {
+		if (jogador.getOuro() < iQuantidade*iCusto) {
 			carregarOuroInsuf();
 			return;
 		}
@@ -141,6 +151,7 @@ public class NovoItemController {
 			bolsa.addItem(keyItem);
 		}else
 			bolsa.addItem(i);
+		jogador.setOuro(-(iQuantidade * iCusto));
 		
 		stage.close();
 		
@@ -148,8 +159,8 @@ public class NovoItemController {
 	public void setBolsa(Bolsa bolsa) {
 		this.bolsa = bolsa;
 	}
-	public void setOuro(int ouro) {
-		this.ouro = ouro;
+	public void setJogador(Heroi jogador) {
+		this.jogador = jogador;
 	}
 	
 		

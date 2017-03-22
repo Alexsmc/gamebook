@@ -36,7 +36,7 @@
           <Button fx:id="buttonUsar" disable="true" mnemonicParsing="false" onAction="#usarItem" prefHeight="30.0" prefWidth="85.0" text="Usar" />
             <Button fx:id="buttonEquipar" disable="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#equiparItem" prefHeight="30.0" prefWidth="113.0" text="(Des)Equipar" />
             <Button layoutX="99.0" layoutY="10.0" mnemonicParsing="false" onAction="#novoItem" prefHeight="30.0" prefWidth="94.0" text="Novo Item" />
-            <Button disable="true" layoutX="225.0" layoutY="10.0" mnemonicParsing="false" onAction="#novoItem" prefHeight="30.0" prefWidth="85.0" text="Remover" />
+            <Button fx:id="buttonRemover" disable="true" layoutX="225.0" layoutY="10.0" mnemonicParsing="false" onAction="#remover" prefHeight="30.0" prefWidth="85.0" text="Remover" />
         </items>
       </ToolBar>
    </children>

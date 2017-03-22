@@ -14,32 +14,27 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <Button layoutX="430.0" layoutY="55.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="Batalha">
+      <Button layoutX="430.0" layoutY="89.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="Batalha">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="430.0" layoutY="105.0" mnemonicParsing="false" onAction="#salvarJogo" prefHeight="39.0" prefWidth="135.0" text="Salvar jogo">
+      <Button layoutX="430.0" layoutY="139.0" mnemonicParsing="false" onAction="#salvarJogo" prefHeight="39.0" prefWidth="135.0" text="Salvar jogo">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="430.0" layoutY="155.0" mnemonicParsing="false" onAction="#itens" prefHeight="39.0" prefWidth="135.0" text="Itens">
+      <Button layoutX="430.0" layoutY="189.0" mnemonicParsing="false" onAction="#itens" prefHeight="39.0" prefWidth="135.0" text="Itens">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="430.0" layoutY="205.0" mnemonicParsing="false" onAction="#usarSorte" prefHeight="39.0" prefWidth="135.0" text="Usar sorte">
+      <Button layoutX="430.0" layoutY="239.0" mnemonicParsing="false" onAction="#usarSorte" prefHeight="39.0" prefWidth="135.0" text="Usar sorte">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="430.0" layoutY="255.0" mnemonicParsing="false" onAction="#fluxoOuro" prefHeight="39.0" prefWidth="135.0" text="Ouro">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="430.0" layoutY="305.0" mnemonicParsing="false" onAction="#batalha" prefHeight="39.0" prefWidth="135.0" text="Loja">
+      <Button layoutX="430.0" layoutY="289.0" mnemonicParsing="false" onAction="#fluxoOuro" prefHeight="39.0" prefWidth="135.0" text="Ouro">
          <font>
             <Font size="18.0" />
          </font>

@@ -57,8 +57,8 @@ public class FachadaLivroJogo implements Runnable {
 	public void usarItem(Heroi jogador, Item item) {
 		interacoes.usarItem(jogador, item);
 	}
-	public void equiparItem(Heroi jogador, EquipItem item) throws Exception {
-		interacoes.equiparItem(jogador, item);
+	public String equiparItem(Heroi jogador, EquipItem item) throws Exception {
+		return interacoes.equiparItem(jogador, item);
 	}
 	public String desequiparItem(Heroi jogador, EquipItem item) throws Exception {
 		return interacoes.desequiparItem(jogador, item);
